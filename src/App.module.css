@@ -1,0 +1,34 @@
+.app {
+  width: 64rem;
+  max-width: 80%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.rulesBtn {
+  background-color: transparent;
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--outline);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  color: white;
+}
+.rulesBtn:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 675px) {
+}

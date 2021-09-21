@@ -1,0 +1,39 @@
+.jumbotron {
+  padding: 1rem 1.5rem;
+  border: 3px solid var(--outline);
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreCard {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreHeading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--score-text);
+}
+
+.scoreValue {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--dark-text);
+}
+
+@media screen and (min-width: 675px) {
+  .scoreCard {
+    padding: 1rem 3rem;
+  }
+}

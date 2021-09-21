@@ -1,13 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+  /* Layout */
+  --mobile-bp: 375px;
+  --desktop-bp: 1366px;
+
+  /* Colors */
+  --scissors: hsl(40, 84%, 53%), hsl(39, 89%, 49%);
+  --scissors-dark: hsla(39, 89%, 49%, 0.8);
+  --paper: hsl(230, 89%, 65%), hsl(230, 89%, 62%);
+  --paper-dark: hsla(230, 89%, 62%, 0.8);
+  --rock: hsl(349, 70%, 56%), hsl(349, 71%, 52%);
+  --rock-dark: hsla(349, 71%, 52%, 0.8);
+  --lizard: hsl(261, 72%, 63%), hsl(261, 73%, 60%);
+  --lizard-dark: hsla(261, 73%, 60%, 0.8);
+  --spock: hsl(189, 58%, 57%), hsl(189, 59%, 53%);
+  --spock-dark: hsla(189, 59%, 53%, 0.8);
+
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --outline: hsl(217, 16%, 45%);
+
+  --background: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: radial-gradient(var(--background));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  width: 90%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
