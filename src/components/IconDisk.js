@@ -5,12 +5,12 @@ class IconDisk extends React.Component {
   render() {
     const classes = `${styles.disk} ${styles[this.props.label.toLowerCase()]}`
     return (
-      <figure className={classes}>
-        <div className={styles.content}>
+      <span className={classes}>
+        <span className={styles.content}>
           <p className='sr-only'>{this.props.label}</p>
           <img src={this.props.icon} alt={`${this.props.label} icon`} className={styles.icon} />
-        </div>
-      </figure>
+        </span>
+      </span>
     )
   }
 }
